@@ -1,0 +1,1 @@
+import{a as d}from"https://st-p.rmcdn.net/8e59565c/dist/c/c-AUVFGGVF.js";var i,a,s=d(()=>{i=async({widget:e})=>{if(e){e.isDraggable=!0;let t=e.$el?.[0];t&&t.classList.add("draggable")}},a=i});s();export{a as default};
