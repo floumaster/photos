@@ -1,1 +1,0 @@
-import{a as t}from"https://st-p.rmcdn.net/8e59565c/dist/c/c-AUVFGGVF.js";var n,o=t(()=>{"use strict";n=class extends Error{constructor(e,r){super(typeof r=="object"?`${e}: ${JSON.stringify(r)}`:e),this.name="ReadymagError"}}});export{n as a,o as b};

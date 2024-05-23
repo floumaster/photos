@@ -1,1 +1,0 @@
-import{a as o}from"https://st-p.rmcdn.net/8e59565c/dist/c/c-AUVFGGVF.js";var r,s,d=o(()=>{r=async({widget:e})=>{let t=e?.$el?.[0];t&&e.cursorStyle&&(t.style.cursor=e.cursorStyle)},s=r});d();export{s as default};

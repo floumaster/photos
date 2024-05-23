@@ -11,27 +11,27 @@ AddType application/font-woff woff
 AddType video/webm webm
 
 RewriteEngine On
-RewriteBase /4778993
+RewriteBase /
 
 RewriteCond %{QUERY_STRING} _escaped_fragment_
-RewriteCond %{REQUEST_URI} !^/4778993/(dist|img|snippets)
+RewriteCond %{REQUEST_URI} !^/(dist|img|snippets)
 RewriteRule ^(/)?(.+)/$ snippets/$2.html [L]
 
 RewriteCond %{QUERY_STRING} _escaped_fragment_
-RewriteCond %{REQUEST_URI} !^/4778993/(dist|img|snippets)
+RewriteCond %{REQUEST_URI} !^/(dist|img|snippets)
 RewriteRule ^(/)?([.a-zA-Z0-9-_/]+) snippets/$2.html [L]
 
 RewriteCond %{QUERY_STRING} _escaped_fragment_
-RewriteCond %{REQUEST_URI} !^/4778993/(dist|img|snippets)
+RewriteCond %{REQUEST_URI} !^/(dist|img|snippets)
 RewriteRule ^ snippets/1.html [L]
 
-RewriteCond %{REQUEST_URI} !^/4778993/(dist|img|snippets)
+RewriteCond %{REQUEST_URI} !^/(dist|img|snippets)
 RewriteRule ^/?$ index.html [QSA,L]
 
-RewriteCond %{REQUEST_URI} !^/4778993/(dist|img|snippets)
+RewriteCond %{REQUEST_URI} !^/(dist|img|snippets)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^.+(dist|img|snippets)(/(.*))? $1$2 [QSA,N]
 
-RewriteCond %{REQUEST_URI} !^/4778993/(dist|img|snippets)
+RewriteCond %{REQUEST_URI} !^/(dist|img|snippets)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^[.a-zA-Z0-9-_]+(/(.*))? / [QSA,N]
