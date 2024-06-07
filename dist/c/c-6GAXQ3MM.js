@@ -1,0 +1,1 @@
+import{a as n}from"https://st-p.rmcdn.net/c9a51d26/dist/c/c-2LNZKOQK.js";function o(){return!!!(typeof window<"u"&&window.document)}function i(){return o()?{pathname:"",search:""}:window.location}var e=n(()=>{"use strict"});export{o as a,i as b,e as c};
